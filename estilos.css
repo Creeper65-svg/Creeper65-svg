@@ -1,0 +1,61 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    background-image: url('tu-gif.gif'); /* Ruta al gif local */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden; /* Evitar barras de desplazamiento */
+    position: relative;
+}
+
+.container {
+    text-align: center;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 10; /* Asegurar que el contenido principal esté por encima del fondo */
+}
+
+.titulo {
+    font-size: 2rem;
+    color: #5a5a5a;
+    margin-bottom: 20px;
+    font-weight: bold;
+    animation: humor 1s infinite;
+}
+
+@keyframes humor {
+    0% { transform: scale(1); color: #5a5a5a; }
+    50% { transform: scale(1.1); color: #ff6347; }
+    100% { transform: scale(1); color: #5a5a5a; }
+}
+
+#gif {
+    width: 200px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.nyanCat {
+    position: absolute;
+    width: 100px;
+    left: -100px; /* Comienza fuera de la pantalla */
+    z-index: 1; /* Asegura que los gifs se mantengan al fondo */
+}
+
+.moveNyan {
+    animation: move 5s forwards;
+}
+
+@keyframes move {
+    0% { left: -100px; }
+    100% { left: 100%; }
+}
