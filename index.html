@@ -1,11 +1,25 @@
-
-            color: #555;
-        }
-    </style>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador con Nyan Cat</title>
+    <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-    <h1>Bienvenido a Mi Página Web</h1>
-    <p>Este es un ejemplo de una página web simple creada con HTML. Puedes modificar el texto, el estilo y añadir más secciones según tus necesidades.</p>
-    <p>¡Gracias por visitar!</p>
+    <div class="container">
+        <h1 class="titulo">Contador: <span id="contador">0</span></h1>
+        <div id="gifContainer">
+            <img src="tu-gif.gif" alt="Nyan Cat" id="gif">
+        </div>
+    </div>
+
+    <!-- Música (añadir tu archivo de música aquí) -->
+    <audio id="music" loop>
+        <source src="tu-audio.mp3" type="audio/mp3">
+        Tu navegador no soporta el elemento de audio.
+    </audio>
+
+    <script src="animación.js"></script>
 </body>
 </html>
